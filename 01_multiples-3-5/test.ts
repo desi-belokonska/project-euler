@@ -1,7 +1,7 @@
 import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 import { multiplesOf3and5 } from "./index.ts";
 
-const testTable = [
+const testTable: Array<Deno.TestDefinition> = [
   {
     name: "should return a number",
     fn(): void {
