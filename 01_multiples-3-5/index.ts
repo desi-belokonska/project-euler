@@ -1,4 +1,4 @@
-export function multiplesOf3and5(number: number) {
+export function multiplesOf3and5(number: number): number {
   const multiples: Set<number> = new Set();
 
   for (let i = 3; i < number; i += 3) {
