@@ -45,4 +45,5 @@ const testTable: Array<Deno.TestDefinition> = [
     },
   },
 ];
+
 testTable.forEach((test) => Deno.test(test));
