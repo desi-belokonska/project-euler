@@ -1,6 +1,6 @@
 # Project Euler
 
-This repository includes my solutions to the [Project Euler](https://projecteuler.net/) problems. The tests are taken from [freecodecamp's version](https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/).
+This repository includes my solutions to the [Project Euler](https://projecteuler.net/) problems. The tests are taken from [freecodecamp's version](https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/). Although Project Euler discourages people from uploading their solutions online so as not to deprive others from the joy of solving it on their own, *freecodecamp*'s tests already give away the answer. I believe the solution is the more interesting part, not the answer, so that's why I want to keep a record of them here.
 
 All the problems are solved in `TypeScript` using the runtime environment [`deno`](https://deno.land/).
 
