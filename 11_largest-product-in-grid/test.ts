@@ -29,7 +29,7 @@ const inDiagonalLeft = [
   [74, 4, 36, 16, 29],
   [36, 42, 69, 73, 45],
   [51, 54, 69, 16, 92],
-  [7, 97, 57, 32, 16]
+  [7, 97, 57, 32, 16],
 ];
 
 const inRowStart = [
@@ -38,7 +38,7 @@ const inRowStart = [
   [100, 13, 56, 98, 1],
   [1, 1, 1, 1, 1],
   [1, 1, 1, 1, 1],
-]
+];
 
 const inRowEnd = [
   [1, 1, 1, 1, 1],
@@ -46,7 +46,23 @@ const inRowEnd = [
   [1, 13, 56, 98, 100],
   [1, 1, 1, 1, 1],
   [1, 1, 1, 1, 1],
-]
+];
+
+const inColumnStart = [
+  [13, 1, 1, 1, 1],
+  [56, 1, 1, 1, 1],
+  [98, 1, 1, 1, 1],
+  [100, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1],
+];
+
+const inColumnEnd = [
+  [1, 1, 1, 1, 1],
+  [56, 1, 1, 1, 1],
+  [98, 1, 1, 1, 1],
+  [100, 1, 1, 1, 1],
+  [13, 1, 1, 1, 1],
+];
 
 const testTable: Array<Deno.TestDefinition> = [
   {
@@ -56,27 +72,40 @@ const testTable: Array<Deno.TestDefinition> = [
     },
   },
   {
-    name: "when called with inDiagonalLeft, should return 14169081",
+    name: "should find product in left diagonal",
     fn(): void {
       assertEquals(largestGridProduct(inDiagonalLeft), 14169081);
     },
   },
   {
-    name: "when called with inDiagonalRight, should return 70600674",
+    name: "should find product in right diagonal",
     fn(): void {
       assertEquals(largestGridProduct(inDiagonalRight), 70600674);
     },
   },
   {
-    name: "when called with inRowStart, should return 7134400",
+    name: "should find product in start of row",
     fn(): void {
       assertEquals(largestGridProduct(inRowStart), 7134400);
     },
   },
   {
-    name: "when called with inRowEnd, should return 7134400",
+    name: "should find product in end of row",
     fn(): void {
       assertEquals(largestGridProduct(inRowEnd), 7134400);
+    },
+  },
+  {
+    name: "should find product in start of column",
+    fn(): void {
+      assertEquals(largestGridProduct(inColumnStart), 7134400);
+    },
+  },
+
+  {
+    name: "should find product in end of column",
+    fn(): void {
+      assertEquals(largestGridProduct(inColumnEnd), 7134400);
     },
   },
 ];
