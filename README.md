@@ -6,7 +6,7 @@ All the problems are solved in `TypeScript` using the runtime environment [`deno
 
 ## Installation
 
-Unlike `node`, `deno` doesn't need `150MB+` npm in every folder for having basic test functionality and Typescript support. So all you need to do is [**install deno**](https://deno.land/#installation).
+Unlike `node`, `deno` doesn't need `150MB+` node_modules in every folder for having basic test functionality and Typescript support. So all you need to do is [**install deno**](https://deno.land/#installation).
 
 ## Running the tests
 
