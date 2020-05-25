@@ -30,7 +30,7 @@ function largestColumnProduct(arr: number[][]): number {
       col.push(arr[y][x]);
     }
 
-    for (let i = 0; i < col.length - 4; i++) {
+    for (let i = 0; i <= col.length - 4; i++) {
       const prod = col.slice(i, i + 4).reduce((acc, x) => acc * x, 1);
 
       largestProduct = prod > largestProduct ? prod : largestProduct;
